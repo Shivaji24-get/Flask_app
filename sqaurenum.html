@@ -1,0 +1,13 @@
+<html>
+<body>
+	<form method='GET' action="/square">
+		Enter a number
+		<!-- <input type="text" name="num"id="num" value={{num if num else ''}}> -->
+		<input type="text" name="num">
+		<input type="submit" value="Calculate">
+	</form>
+	{% if square is not none %}
+	<h2>Square of number{{num}} is :{{square}}</h2>
+	{% endif %}
+</body>
+</html>
